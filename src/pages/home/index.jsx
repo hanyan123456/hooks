@@ -3,6 +3,10 @@ import Child from './child'
 import AnReducer from './useReducer'
 import AnContext from  './useContext'
 import AnEffect from './useEffect'
+import AnRef   from './useRef'
+import AnMemo from './useMemo'
+import PageOne from './useBind'
+import AnCallback from './useCallback'
 
 const Home = ()=>{
     const [list, setList] = useState([
@@ -39,11 +43,22 @@ const Home = ()=>{
            }
            {/* <Child data={list}></Child> */}
 
-           <button onClick={hdShow}>展示</button>
-
+           <button onClick={hdShow}>隐藏</button>
+           <br></br>
            <AnReducer></AnReducer>
+           <br></br>
            <AnContext></AnContext>
+           <br></br>
            <AnEffect></AnEffect>
+           <br></br>
+           <AnRef></AnRef>
+           <br></br>
+           <AnMemo></AnMemo>
+           <br></br>
+           <PageOne></PageOne>
+           <br></br>
+           <AnCallback></AnCallback>
+
 
           
         </div>

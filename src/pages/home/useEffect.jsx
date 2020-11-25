@@ -1,3 +1,8 @@
+/*
+ * @Descripttion: 
+ * @Author: 寒嫣
+ * @Date: 2020-11-25 10:50:03
+ */
 import { useState,useEffect } from 'react'
 const AnEffect = () => {
     const [count,setCount] = useState(0)
@@ -8,6 +13,11 @@ const AnEffect = () => {
             console.log('清理...', count);
         }
     }, [count])
+
+    useEffect(()=>{
+        console.log('初始化')
+    })
+
     const hdCahnge = () => {
         setCount( count + 1)
     }

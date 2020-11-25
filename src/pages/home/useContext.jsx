@@ -1,3 +1,8 @@
+/*
+ * @Descripttion: 使用useContext，减少层级获取数据
+ * @Author: 寒嫣
+ * @Date: 2020-11-25 10:50:03
+ */
 import  {useState, useContext, createContext } from 'react'
 
 const UserContext = createContext();
